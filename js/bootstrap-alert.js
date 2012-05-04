@@ -45,7 +45,7 @@
 
     e && e.preventDefault()
 
-    $parent.length || ($parent = $this.hasClass('alert') ? $this : $this.parent())
+    $parent.length || ($parent = $this.hasClass('alerting') ? $this : $this.parent())
 
     $parent.trigger(e = $.Event('close'))
 
